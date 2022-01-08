@@ -21,8 +21,9 @@ function IsPrimeNumber() {
         var regex = /[^0-9/]+/
         var pos = dob.search(/[/]/);
         //console.log(pos);
+        //console.log(dob[pos])
 
-        if (dob.length > 4 && regex.test(dob) !== true && pos === 2) {
+        if (dob.length > 4 && regex.test(dob) !== true && pos === 2 && ((dob[pos + 1] || dob[pos] + 2 || dob[pos - 1]) !== '/')) {
             var date = ("" + dob).split('').slice(0, 2).join('');
             var month = ("" + dob).split('').slice(-2).join('');
             if (date > 31 || month > 12 || (date > 29 & month == 02)) {
