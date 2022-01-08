@@ -18,15 +18,16 @@ function IsPrimeNumber() {
         var date, month;
 
         //everything except numbers
-        var regex = /[^0-9]+/
+        var regex = /[^0-9/]+/
         var pos = dob.search(/[/]/);
-        //console.log(pos) 
+        //console.log(pos);
 
         if (dob.length > 4 && regex.test(dob) !== true && pos === 2) {
             var date = ("" + dob).split('').slice(0, 2).join('');
             var month = ("" + dob).split('').slice(-2).join('');
             if (date > 31 || month > 12 || (date > 29 & month == 02)) {
-                console.log("invalid date");
+                output.innerText = "invalid date";
+                failureMessageColor();
             }
             else {
                 var dates = ("" + date).split('');
