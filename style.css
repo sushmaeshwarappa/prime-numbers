@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@1,300;1,400&display=swap');
+:root{
+    --background-color: #dbd09d;
+}
+
+body{
+    margin: 0px;
+    text-align: center;
+    font-family: 'Fira Sans Condensed', 
+    sans-serif;
+}
+
+nav{
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+nav div{
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+main div{
+    padding: 1rem;
+}
+
+main div label{
+    font-size: larger;
+}
+
+main div input{
+    border: solid;
+    border-bottom-right-radius: 0.5rem;
+    font-size: large;
+    padding: 0.3rem;
+}
+
+#name{
+    margin-right: 2.3rem;
+}
+
+#nameValue,#year{
+    border-color: var(--background-color);
+}
+
+#output{
+    font-size: large;
+}
+
+button{
+    background-color: var(--background-color);
+    font-size: large;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    padding: 0.2rem 2rem;
+}
